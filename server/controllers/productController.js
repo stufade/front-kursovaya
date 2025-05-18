@@ -18,8 +18,6 @@ exports.createProduct = async (req, res) => {
   }
 };
 
-
-// Новые методы
 exports.getProductById = async (req, res) => {
   try {
     const product = await Product.findByPk(req.params.id, {
